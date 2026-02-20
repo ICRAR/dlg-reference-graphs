@@ -352,7 +352,7 @@
             "fields": [
                 {
                     "name": "func_name",
-                    "value": "",
+                    "value": "reverse",
                     "defaultValue": "",
                     "description": "Python function name",
                     "readonly": false,
