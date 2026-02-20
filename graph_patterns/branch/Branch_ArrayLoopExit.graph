@@ -1104,7 +1104,7 @@
             "description": "A Drop not storing any data (useful for just passing on events)",
             "comment": "",
             "x": 1000.9285143875726,
-            "y": 724.1057276713825,
+            "y": 726.7041038904027,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "483b909",
             "paletteDownloadUrl": "https://raw.githubusercontent.com/ICRAR/EAGLE-graph-repo/master/daliuge/daliuge-master.palette",
