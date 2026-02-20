@@ -520,7 +520,22 @@
                     "encoding": "utf-8",
                     "id": "73b54432-eeac-4670-b16f-80468faa13a9",
                     "parameterType": "ApplicationArgument",
-                    "usage": "InputOutput"
+                    "usage": "InputPort"
+                },
+                {
+                    "name": "output",
+                    "value": "",
+                    "defaultValue": "",
+                    "description": "",
+                    "readonly": false,
+                    "type": "String",
+                    "precious": false,
+                    "options": [],
+                    "positional": false,
+                    "encoding": "utf-8",
+                    "id": "bc058a63-8c51-4934-8f29-f8dd012e0843",
+                    "parameterType": "ApplicationArgument",
+                    "usage": "OutputPort"
                 }
             ],
             "inputAppFields": [],
@@ -543,7 +558,7 @@
             "color": "#2c2c2c",
             "drawOrderHint": 0,
             "id": "7d24f8fc-597a-4730-94f5-642d091c9ee8",
-            "name": "greeting",
+            "name": "output",
             "description": "A standard file on a filesystem mounted to the deployment machine",
             "comment": "",
             "x": 778.852170905908,
@@ -689,7 +704,7 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "greeting",
+                    "name": "output",
                     "value": "",
                     "defaultValue": "",
                     "description": "",
@@ -740,7 +755,7 @@
         {
             "comment": "",
             "from": "a56d33a9-b119-4a7d-979f-02f4d509c8d1",
-            "fromPort": "73b54432-eeac-4670-b16f-80468faa13a9",
+            "fromPort": "bc058a63-8c51-4934-8f29-f8dd012e0843",
             "to": "7d24f8fc-597a-4730-94f5-642d091c9ee8",
             "toPort": "49065e94-f0c6-4268-8d53-b7cc680246d3",
             "loop_aware": "0",
