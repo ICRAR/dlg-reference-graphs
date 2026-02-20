@@ -367,7 +367,7 @@
                 },
                 {
                     "name": "func_code",
-                    "value": "def reverse(greeting: str): \n\treturn greeting[-1::-1]",
+                    "value": "def reverse(greeting: str): \n    return greeting[-1::-1]",
                     "defaultValue": "",
                     "description": "Python function code, e.g. 'def func_name(args): return args'. Note that func_name above needs to match the defined name here.",
                     "readonly": false,
