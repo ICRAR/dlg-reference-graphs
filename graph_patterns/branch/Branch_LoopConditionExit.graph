@@ -7,8 +7,8 @@
         "repoService": "GitHub",
         "repoBranch": "main",
         "repo": "ICRAR/dlg-reference-graphs",
-        "generatorVersion": "v6.7.0",
-        "generatorCommitHash": "8aefeda1f84a8c4b65e5594775cbc67ef5812ea9",
+        "generatorVersion": "v6.9.1",
+        "generatorCommitHash": "253e656fd0a4cc4e1f5ff63bfa70b20da8fd10dc",
         "generatorName": "EAGLE",
         "schemaVersion": "OJS",
         "readonly": true,
@@ -28,14 +28,14 @@
             "category": "Loop",
             "categoryType": "Construct",
             "isGroup": true,
-            "color": "rgb(227 189 100)",
+            "color": "#e3bd64",
             "drawOrderHint": 0,
             "id": "4a855dc6-9ddf-407f-b10c-c5f60cebc485",
             "name": "Loop",
             "description": "Placeholder 'loop' description",
+            "comment": "",
             "x": 921.988923367376,
             "y": 752.1616653614483,
-            "subject": null,
             "repositoryUrl": "",
             "commitHash": "",
             "paletteDownloadUrl": "",
@@ -93,23 +93,25 @@
             "inputApplicationType": "None",
             "inputApplicationId": null,
             "inputApplicationDescription": "",
+            "inputApplicationComment": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationId": null,
-            "outputApplicationDescription": ""
+            "outputApplicationDescription": "",
+            "outputApplicationComment": ""
         },
         {
             "category": "PythonApp",
             "categoryType": "Application",
             "isGroup": false,
-            "color": "#0059a5",
+            "color": "#ff66cc",
             "drawOrderHint": 0,
             "id": "05320368-c28a-4592-8534-13e4dcc51d04",
             "name": "Do a bit more",
             "description": "An application component in the form of a Python app",
+            "comment": "",
             "x": 795.9629878192467,
             "y": 889.6183847647113,
-            "subject": null,
             "repositoryUrl": "",
             "commitHash": "",
             "paletteDownloadUrl": "",
@@ -303,23 +305,25 @@
             "inputApplicationType": "None",
             "inputApplicationId": null,
             "inputApplicationDescription": "",
+            "inputApplicationComment": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationId": null,
-            "outputApplicationDescription": ""
+            "outputApplicationDescription": "",
+            "outputApplicationComment": ""
         },
         {
             "category": "PythonApp",
             "categoryType": "Application",
             "isGroup": false,
-            "color": "#0059a5",
+            "color": "#ff66cc",
             "drawOrderHint": 0,
             "id": "0da87122-24bc-4ae0-8f13-987dd892907f",
             "name": "RandomArrayApp",
             "description": "A testing APP that does not take any input and produces a random array of type int64, if integer is set to True, else of type float64. size indicates the number of elements ranging between the values low and high. The resulting array will be send to all connected output apps.",
+            "comment": "",
             "x": 495.0338441909935,
             "y": 656.5531076701038,
-            "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "927717d",
             "paletteDownloadUrl": "https://raw.githubusercontent.com/ICRAR/EAGLE-graph-repo/master/daliuge/daliuge-master.palette",
@@ -512,10 +516,12 @@
             "inputApplicationType": "None",
             "inputApplicationId": null,
             "inputApplicationDescription": "",
+            "inputApplicationComment": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationId": null,
-            "outputApplicationDescription": ""
+            "outputApplicationDescription": "",
+            "outputApplicationComment": ""
         },
         {
             "category": "File",
@@ -526,9 +532,9 @@
             "id": "79ae1ab0-fbd5-4a3d-9e68-c6ccd18b035c",
             "name": "array",
             "description": "A standard file on a filesystem mounted to the deployment machine",
+            "comment": "",
             "x": 608.1389376220825,
             "y": 649.1710851715623,
-            "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "927717d",
             "paletteDownloadUrl": "https://raw.githubusercontent.com/ICRAR/EAGLE-graph-repo/master/daliuge/daliuge-master.palette",
@@ -676,10 +682,12 @@
             "inputApplicationType": "None",
             "inputApplicationId": null,
             "inputApplicationDescription": "",
+            "inputApplicationComment": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationId": null,
-            "outputApplicationDescription": ""
+            "outputApplicationDescription": "",
+            "outputApplicationComment": ""
         },
         {
             "category": "Branch",
@@ -690,9 +698,9 @@
             "id": "dc7677dd-255b-444b-9c00-af469b33d136",
             "name": "Branch",
             "description": "A branch application that copies the input to either the 'true' or the 'false' output depending on the result of the provided conditional function. The conditional function can be specified either in-line or as an external function and has to return a boolean value. The inputs of the application are passed on as arguments to the conditional function. The conditional function needs to return a boolean value, but the application will copy the input data to the true or false output, depending on the result of the conditional function.",
+            "comment": "",
             "x": 985.6973142684928,
             "y": 707.8176116474392,
-            "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "4df6f40",
             "paletteDownloadUrl": "https://raw.githubusercontent.com/ICRAR/EAGLE-graph-repo/3992d1a8cf79136a88539cbf79c54b1314d38e63/daliuge/daliuge-EAGLE-911.palette",
@@ -716,7 +724,7 @@
                 },
                 {
                     "name": "func_code",
-                    "value": "def condition(x): return (x < 0.25)",
+                    "value": "def condition(x): \n    return (x < 0.05)",
                     "defaultValue": "condition(x): return (x > 0)",
                     "description": "Python function code for the branch condition. Modify as required. Note that func_name above needs to match the defined name here.",
                     "readonly": false,
@@ -856,23 +864,25 @@
             "inputApplicationType": "None",
             "inputApplicationId": null,
             "inputApplicationDescription": "",
+            "inputApplicationComment": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationId": null,
-            "outputApplicationDescription": ""
+            "outputApplicationDescription": "",
+            "outputApplicationComment": ""
         },
         {
             "category": "PythonApp",
             "categoryType": "Application",
             "isGroup": false,
-            "color": "#0059a5",
+            "color": "#ff66cc",
             "drawOrderHint": 0,
             "id": "67c5883d-b5ea-4a3e-ae38-2b5e6ba3a9bd",
             "name": "do something",
             "description": "Unknown",
+            "comment": "",
             "x": 837.1194689423176,
             "y": 816.5031803523076,
-            "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "4df6f40",
             "paletteDownloadUrl": "https://raw.githubusercontent.com/ICRAR/EAGLE-graph-repo/3992d1a8cf79136a88539cbf79c54b1314d38e63/daliuge/daliuge-EAGLE-911.palette",
@@ -1021,10 +1031,12 @@
             "inputApplicationType": "None",
             "inputApplicationId": null,
             "inputApplicationDescription": "",
+            "inputApplicationComment": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationId": null,
-            "outputApplicationDescription": ""
+            "outputApplicationDescription": "",
+            "outputApplicationComment": ""
         },
         {
             "category": "Memory",
@@ -1035,9 +1047,9 @@
             "id": "be9d73d9-b31c-4d9c-81dd-891c9d378ae1",
             "name": "with something",
             "description": "In-memory storage of intermediate data products",
+            "comment": "",
             "x": 856.0366392627789,
             "y": 607.7049459581854,
-            "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "4df6f40",
             "paletteDownloadUrl": "https://raw.githubusercontent.com/ICRAR/EAGLE-graph-repo/3992d1a8cf79136a88539cbf79c54b1314d38e63/daliuge/daliuge-EAGLE-911.palette",
@@ -1065,7 +1077,7 @@
                     "defaultValue": "None",
                     "description": "Data to be loaded into memory",
                     "readonly": false,
-                    "type": "String",
+                    "type": "Object",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -1171,10 +1183,12 @@
             "inputApplicationType": "None",
             "inputApplicationId": null,
             "inputApplicationDescription": "",
+            "inputApplicationComment": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationId": null,
-            "outputApplicationDescription": ""
+            "outputApplicationDescription": "",
+            "outputApplicationComment": ""
         },
         {
             "category": "Memory",
@@ -1185,9 +1199,9 @@
             "id": "43e13f1a-44de-4900-9344-39852fcbdcd6",
             "name": "sleep_time",
             "description": "In-memory storage of intermediate data products",
+            "comment": "",
             "x": 1091.31212761442,
             "y": 781.5377883894184,
-            "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "4df6f40",
             "paletteDownloadUrl": "https://raw.githubusercontent.com/ICRAR/EAGLE-graph-repo/3992d1a8cf79136a88539cbf79c54b1314d38e63/daliuge/daliuge-EAGLE-911.palette",
@@ -1196,11 +1210,11 @@
             "fields": [
                 {
                     "name": "pydata",
-                    "value": "None",
+                    "value": false,
                     "defaultValue": "None",
                     "description": "Data to be loaded into memory",
                     "readonly": false,
-                    "type": "String",
+                    "type": "Boolean",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -1321,10 +1335,12 @@
             "inputApplicationType": "None",
             "inputApplicationId": null,
             "inputApplicationDescription": "",
+            "inputApplicationComment": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationId": null,
-            "outputApplicationDescription": ""
+            "outputApplicationDescription": "",
+            "outputApplicationComment": ""
         },
         {
             "category": "Memory",
@@ -1335,9 +1351,9 @@
             "id": "be4de850-ffd9-47f0-911b-f9df52ab11d6",
             "name": "sleep_time",
             "description": "In-memory storage of intermediate data products",
+            "comment": "",
             "x": 942.9618403759545,
             "y": 784.7032356294532,
-            "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "4df6f40",
             "paletteDownloadUrl": "https://raw.githubusercontent.com/ICRAR/EAGLE-graph-repo/3992d1a8cf79136a88539cbf79c54b1314d38e63/daliuge/daliuge-EAGLE-911.palette",
@@ -1346,11 +1362,11 @@
             "fields": [
                 {
                     "name": "pydata",
-                    "value": "None",
+                    "value": false,
                     "defaultValue": "None",
                     "description": "Data to be loaded into memory",
                     "readonly": false,
-                    "type": "String",
+                    "type": "Boolean",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -1471,23 +1487,25 @@
             "inputApplicationType": "None",
             "inputApplicationId": null,
             "inputApplicationDescription": "",
+            "inputApplicationComment": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationId": null,
-            "outputApplicationDescription": ""
+            "outputApplicationDescription": "",
+            "outputApplicationComment": ""
         },
         {
             "category": "PythonApp",
             "categoryType": "Application",
             "isGroup": false,
-            "color": "#0059a5",
+            "color": "#ff66cc",
             "drawOrderHint": 0,
             "id": "15fa6c23-6640-4ebb-a57f-29691025c8ee",
             "name": "PickOne",
             "description": "App that picks the first element of an input list, passes that to all outputs, except the first one. The first output is used to pass the remaining array on. This app is useful for a loop.",
+            "comment": "",
             "x": 762.1870244092496,
             "y": 654.0721636403481,
-            "subject": null,
             "repositoryUrl": "",
             "commitHash": "",
             "paletteDownloadUrl": "",
@@ -1651,10 +1669,12 @@
             "inputApplicationType": "None",
             "inputApplicationId": null,
             "inputApplicationDescription": "",
+            "inputApplicationComment": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationId": null,
-            "outputApplicationDescription": ""
+            "outputApplicationDescription": "",
+            "outputApplicationComment": ""
         },
         {
             "category": "Memory",
@@ -1665,9 +1685,9 @@
             "id": "b897f274-f8ba-456b-a5f9-f62621f05755",
             "name": "rest_array",
             "description": "In-memory storage of intermediate data products",
+            "comment": "",
             "x": 752.665719120332,
             "y": 729.016133780737,
-            "subject": null,
             "repositoryUrl": "https://github.com/ICRAR/daliuge",
             "commitHash": "4df6f40",
             "paletteDownloadUrl": "https://raw.githubusercontent.com/ICRAR/EAGLE-graph-repo/3992d1a8cf79136a88539cbf79c54b1314d38e63/daliuge/daliuge-EAGLE-911.palette",
@@ -1816,14 +1836,17 @@
             "inputApplicationType": "None",
             "inputApplicationId": null,
             "inputApplicationDescription": "",
+            "inputApplicationComment": "",
             "outputApplicationName": "",
             "outputApplicationType": "None",
             "outputApplicationId": null,
-            "outputApplicationDescription": ""
+            "outputApplicationDescription": "",
+            "outputApplicationComment": ""
         }
     ],
     "linkDataArray": [
         {
+            "comment": "",
             "from": "0da87122-24bc-4ae0-8f13-987dd892907f",
             "fromPort": "25bf5b38-439c-49c9-b7cc-7905d34eed3a",
             "to": "79ae1ab0-fbd5-4a3d-9e68-c6ccd18b035c",
@@ -1832,6 +1855,7 @@
             "closesLoop": false
         },
         {
+            "comment": "",
             "from": "be9d73d9-b31c-4d9c-81dd-891c9d378ae1",
             "fromPort": "62927f63-3d46-41ff-8c3f-b2442c358d9d",
             "to": "dc7677dd-255b-444b-9c00-af469b33d136",
@@ -1840,6 +1864,7 @@
             "closesLoop": false
         },
         {
+            "comment": "",
             "from": "dc7677dd-255b-444b-9c00-af469b33d136",
             "fromPort": "6c139138-141c-4132-89b8-7879dda3c4ea",
             "to": "43e13f1a-44de-4900-9344-39852fcbdcd6",
@@ -1848,6 +1873,7 @@
             "closesLoop": false
         },
         {
+            "comment": "",
             "from": "43e13f1a-44de-4900-9344-39852fcbdcd6",
             "fromPort": "3eba1903-0a29-4d04-be3f-ce626cb098b8",
             "to": "05320368-c28a-4592-8534-13e4dcc51d04",
@@ -1856,6 +1882,7 @@
             "closesLoop": false
         },
         {
+            "comment": "",
             "from": "dc7677dd-255b-444b-9c00-af469b33d136",
             "fromPort": "8d74d420-7837-45c3-8b78-bb860cab8a5e",
             "to": "be4de850-ffd9-47f0-911b-f9df52ab11d6",
@@ -1864,6 +1891,7 @@
             "closesLoop": false
         },
         {
+            "comment": "",
             "from": "be4de850-ffd9-47f0-911b-f9df52ab11d6",
             "fromPort": "0f87c684-95b4-4819-927a-9f04af8e86f8",
             "to": "67c5883d-b5ea-4a3e-ae38-2b5e6ba3a9bd",
@@ -1872,6 +1900,7 @@
             "closesLoop": false
         },
         {
+            "comment": "",
             "from": "79ae1ab0-fbd5-4a3d-9e68-c6ccd18b035c",
             "fromPort": "935017d0-297b-4865-9e80-857c9abb160c",
             "to": "15fa6c23-6640-4ebb-a57f-29691025c8ee",
@@ -1880,6 +1909,7 @@
             "closesLoop": false
         },
         {
+            "comment": "",
             "from": "15fa6c23-6640-4ebb-a57f-29691025c8ee",
             "fromPort": "491b1606-d7a0-4209-a06c-99a1ee208e2c",
             "to": "be9d73d9-b31c-4d9c-81dd-891c9d378ae1",
@@ -1888,6 +1918,7 @@
             "closesLoop": false
         },
         {
+            "comment": "",
             "from": "15fa6c23-6640-4ebb-a57f-29691025c8ee",
             "fromPort": "081da0e5-84ce-4177-94c8-f2c32882369a",
             "to": "b897f274-f8ba-456b-a5f9-f62621f05755",
@@ -1896,6 +1927,7 @@
             "closesLoop": false
         },
         {
+            "comment": "",
             "from": "b897f274-f8ba-456b-a5f9-f62621f05755",
             "fromPort": "1278eace-cb28-4ba3-a445-e70899b6093f",
             "to": "15fa6c23-6640-4ebb-a57f-29691025c8ee",
@@ -1904,6 +1936,7 @@
             "closesLoop": true
         },
         {
+            "comment": "",
             "from": "67c5883d-b5ea-4a3e-ae38-2b5e6ba3a9bd",
             "fromPort": "98a5f4a6-52cc-4720-bc79-ddab2c23594f",
             "to": "b897f274-f8ba-456b-a5f9-f62621f05755",
@@ -1912,6 +1945,7 @@
             "closesLoop": false
         },
         {
+            "comment": "",
             "from": "05320368-c28a-4592-8534-13e4dcc51d04",
             "fromPort": "66d8030d-85e5-4489-ab31-bc0be6fe0acf",
             "to": "b897f274-f8ba-456b-a5f9-f62621f05755",
