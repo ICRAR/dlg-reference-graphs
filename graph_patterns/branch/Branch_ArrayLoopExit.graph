@@ -7,8 +7,8 @@
         "repoService": "GitHub",
         "repoBranch": "main",
         "repo": "ICRAR/dlg-reference-graphs",
-        "generatorVersion": "v6.9.1",
-        "generatorCommitHash": "253e656fd0a4cc4e1f5ff63bfa70b20da8fd10dc",
+        "generatorVersion": "v7.0.1",
+        "generatorCommitHash": "f636919ffd5d1190f6649d105de255f54c97bdcf",
         "generatorName": "EAGLE",
         "schemaVersion": "OJS",
         "readonly": false,
@@ -42,7 +42,7 @@
             "dataHash": "",
             "fields": [
                 {
-                    "name": "Persist",
+                    "name": "persist",
                     "value": false,
                     "defaultValue": "false",
                     "description": "Specifies whether this data component contains data that should not be deleted after execution",
@@ -57,7 +57,7 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "Streaming",
+                    "name": "streaming",
                     "value": false,
                     "defaultValue": "false",
                     "description": "Specifies whether this data component streams input and output data",
@@ -270,21 +270,6 @@
             "dataHash": "66c8e8c44691e00847d02d2707d65fbc9f5252f260afcfa1bc3bf61abb764a83",
             "parentId": "4d9bed0f-f247-43bf-9749-ec375f77083b",
             "fields": [
-                {
-                    "name": "pydata",
-                    "value": false,
-                    "defaultValue": "None",
-                    "description": "Data to be loaded into memory",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "8dac23c3-bc34-4f36-abff-87e8c7b68c8b",
-                    "parameterType": "ApplicationArgument",
-                    "usage": "NoPort"
-                },
                 {
                     "name": "false",
                     "value": "",
@@ -775,7 +760,7 @@
                     "positional": false,
                     "encoding": "pickle",
                     "id": "cfd4f0a5-7988-4d2b-9b52-1accf43af065",
-                    "parameterType": "ComponentParameter",
+                    "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
                 },
                 {
@@ -847,7 +832,7 @@
                 },
                 {
                     "name": "dropclass",
-                    "value": "dlg.apps.simple.Branch",
+                    "value": "dlg.apps.branch.Branch",
                     "defaultValue": "dlg.apps.simple.Branch",
                     "description": "Application class",
                     "readonly": false,
@@ -862,7 +847,7 @@
                 },
                 {
                     "name": "base_name",
-                    "value": "simple",
+                    "value": "branch",
                     "defaultValue": "simple",
                     "description": "Base name of application class",
                     "readonly": false,
@@ -2150,5 +2135,6 @@
             "loop_aware": "0",
             "closesLoop": false
         }
-    ]
+    ],
+    "visualDataArray": []
 }
