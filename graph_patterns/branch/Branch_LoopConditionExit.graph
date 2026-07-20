@@ -2,8 +2,8 @@
     "modelData": {
         "filePath": "graph_patterns/branch/Branch_LoopConditionExit.graph",
         "fileType": "Graph",
-        "shortDescription": "Graph using actual data and the Branch App.",
-        "detailedDescription": "The graph is generating an array of random numbers and decides what to do with the result depending on whether the currently picked value of the array is smaller than a certain value.",
+        "shortDescription": "Graph using actual data and the Branch App with multiple inputs.",
+        "detailedDescription": "The graph is generating an array of random numbers and decides what to do with the result depending on whether the currently picked value of the array is smaller than a value passed in from a memory drop.",
         "repoService": "GitHub",
         "repoBranch": "main",
         "repo": "ICRAR/dlg-reference-graphs",
@@ -21,8 +21,57 @@
         "lastModifiedDatetime": 0,
         "numLGNodes": 12
     },
-    "activeGraphConfigId": null,
-    "graphConfigurations": {},
+    "activeGraphConfigId": "fb750fe3-3fcc-427b-a1f9-e1198cd4b7b7",
+    "graphConfigurations": {
+        "fb750fe3-3fcc-427b-a1f9-e1198cd4b7b7": {
+            "modelData": {
+                "name": "Default Configuration",
+                "shortDescription": "",
+                "detailedDescription": "",
+                "type": "GraphConfig",
+                "schemaVersion": "Unknown",
+                "readonly": false,
+                "location": {
+                    "repositoryService": "Unknown",
+                    "repositoryBranch": "",
+                    "repositoryName": "",
+                    "repositoryPath": "",
+                    "repositoryFileName": "",
+                    "commitHash": "",
+                    "downloadUrl": ""
+                },
+                "generatorVersion": "",
+                "generatorCommitHash": "",
+                "generatorName": "",
+                "repositoryUrl": "",
+                "graphLocation": {
+                    "repositoryService": "GitHub",
+                    "repositoryBranch": "main",
+                    "repositoryName": "ICRAR/dlg-reference-graphs",
+                    "repositoryPath": "graph_patterns/branch",
+                    "repositoryFileName": "Branch_LoopConditionExit.graph",
+                    "commitHash": "3930238c5d817c43866e45ec6a9e224cf41ac53a",
+                    "downloadUrl": "https://raw.githubusercontent.com/ICRAR/dlg-reference-graphs/3930238c5d817c43866e45ec6a9e224cf41ac53a/graph_patterns/branch/Branch_LoopConditionExit.graph"
+                },
+                "signature": "",
+                "lastModifiedName": "",
+                "lastModifiedEmail": "",
+                "lastModifiedDatetime": 0,
+                "numLGNodes": 0
+            },
+            "id": "fb750fe3-3fcc-427b-a1f9-e1198cd4b7b7",
+            "nodes": {
+                "8e6b3623-4f1e-4f84-bb69-8fddd3bb1505": {
+                    "fields": {
+                        "30d9bd8b-3640-41fb-bf2f-f932e229d946": {
+                            "value": 0.5,
+                            "comment": ""
+                        }
+                    }
+                }
+            }
+        }
+    },
     "nodeDataArray": [
         {
             "category": "Loop",
@@ -209,16 +258,16 @@
                     "usage": "NoPort"
                 },
                 {
-                    "name": "leave",
-                    "value": "",
+                    "name": "sleep_time",
+                    "value": null,
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
-                    "type": "String",
+                    "type": "Float",
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "encoding": "pickle",
+                    "encoding": "dill",
                     "id": "adca4562-2239-4100-a31c-d784ed5c56d4",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -233,7 +282,7 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "encoding": "pickle",
+                    "encoding": "dill",
                     "id": "66d8030d-85e5-4489-ab31-bc0be6fe0acf",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -266,36 +315,6 @@
                     "encoding": "pickle",
                     "id": "d9f56aa4-8cec-4435-9b4c-701155f214a5",
                     "parameterType": "ConstraintParameter",
-                    "usage": "NoPort"
-                },
-                {
-                    "name": "func_code",
-                    "value": "",
-                    "defaultValue": "def func_name(args): return args",
-                    "description": "Python function code",
-                    "readonly": false,
-                    "type": "Python",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "3a0ba670-6e94-4762-b48b-227e72e28048",
-                    "parameterType": "ComponentParameter",
-                    "usage": "NoPort"
-                },
-                {
-                    "name": "func_name",
-                    "value": "",
-                    "defaultValue": "func_name",
-                    "description": "Python function name",
-                    "readonly": false,
-                    "type": "Python",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "ad336a6d-9f36-4e81-a283-9ab1134a457c",
-                    "parameterType": "ComponentParameter",
                     "usage": "NoPort"
                 },
                 {
@@ -747,15 +766,15 @@
             "fields": [
                 {
                     "name": "sleep_time",
-                    "value": "5",
+                    "value": 5,
                     "defaultValue": "5",
                     "description": "The number of seconds to sleep",
                     "readonly": false,
-                    "type": "Object.element",
+                    "type": "Float",
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "encoding": "pickle",
+                    "encoding": "dill",
                     "id": "ca5dc087-30da-4ead-9350-672030fd2808",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -770,7 +789,7 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "encoding": "pickle",
+                    "encoding": "dill",
                     "id": "98a5f4a6-52cc-4720-bc79-ddab2c23594f",
                     "parameterType": "ComponentParameter",
                     "usage": "OutputPort"
@@ -1072,21 +1091,6 @@
             "parentId": "4a855dc6-9ddf-407f-b10c-c5f60cebc485",
             "fields": [
                 {
-                    "name": "pydata",
-                    "value": false,
-                    "defaultValue": "None",
-                    "description": "Data to be loaded into memory",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "314bc1a0-1efe-4e5f-895c-2870e6f1077f",
-                    "parameterType": "ApplicationArgument",
-                    "usage": "NoPort"
-                },
-                {
                     "name": "false",
                     "value": "",
                     "defaultValue": "",
@@ -1223,21 +1227,6 @@
             "dataHash": "66c8e8c44691e00847d02d2707d65fbc9f5252f260afcfa1bc3bf61abb764a83",
             "parentId": "4a855dc6-9ddf-407f-b10c-c5f60cebc485",
             "fields": [
-                {
-                    "name": "pydata",
-                    "value": false,
-                    "defaultValue": "None",
-                    "description": "Data to be loaded into memory",
-                    "readonly": false,
-                    "type": "Boolean",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "10da6df8-2d0b-4c59-95ed-885915d938e7",
-                    "parameterType": "ApplicationArgument",
-                    "usage": "NoPort"
-                },
                 {
                     "name": "true",
                     "value": "",
