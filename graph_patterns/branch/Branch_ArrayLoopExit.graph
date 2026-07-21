@@ -134,21 +134,6 @@
                     "usage": "InputOutput"
                 },
                 {
-                    "name": "pydata",
-                    "value": "None",
-                    "defaultValue": "None",
-                    "description": "Data to be loaded into memory",
-                    "readonly": false,
-                    "type": "String",
-                    "precious": false,
-                    "options": [],
-                    "positional": false,
-                    "encoding": "pickle",
-                    "id": "6f959a4c-3513-4e43-abca-67db4f8d0346",
-                    "parameterType": "ApplicationArgument",
-                    "usage": "NoPort"
-                },
-                {
                     "name": "persist",
                     "value": false,
                     "defaultValue": "False",
@@ -666,7 +651,7 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "encoding": "pickle",
+                    "encoding": "dill",
                     "id": "b0db37e5-c963-4cc5-bedf-97aff28a6add",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputOutput"
@@ -681,7 +666,7 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "encoding": "pickle",
+                    "encoding": "dill",
                     "id": "8d6d00a3-384d-413c-a2cb-9d83fc9cd688",
                     "parameterType": "ApplicationArgument",
                     "usage": "OutputPort"
@@ -947,7 +932,7 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "encoding": "pickle",
+                    "encoding": "dill",
                     "id": "5f9d6c3c-1024-47fa-a518-13f469cde01d",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
@@ -962,9 +947,9 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "encoding": "pickle",
+                    "encoding": "dill",
                     "id": "b8b09b1f-b3b9-4849-8358-a460b95dbae1",
-                    "parameterType": "ApplicationArgument",
+                    "parameterType": "ComponentParameter",
                     "usage": "OutputPort"
                 },
                 {
@@ -1733,11 +1718,11 @@
             "fields": [
                 {
                     "name": "sleep_time",
-                    "value": "",
+                    "value": null,
                     "defaultValue": "",
                     "description": "Dummy port",
                     "readonly": false,
-                    "type": "Object",
+                    "type": "Float",
                     "precious": false,
                     "options": [],
                     "positional": false,
@@ -1884,22 +1869,22 @@
             "fields": [
                 {
                     "name": "sleep_time",
-                    "value": "5",
+                    "value": 5,
                     "defaultValue": "5",
                     "description": "The number of seconds to sleep",
                     "readonly": false,
-                    "type": "Object.element",
+                    "type": "Float",
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "encoding": "pickle",
+                    "encoding": "dill",
                     "id": "9996c831-54c7-4414-9eac-ebf1bfab2a10",
                     "parameterType": "ApplicationArgument",
                     "usage": "InputPort"
                 },
                 {
                     "name": "block_skip",
-                    "value": true,
+                    "value": false,
                     "defaultValue": "",
                     "description": "",
                     "readonly": false,
@@ -1922,7 +1907,7 @@
                     "precious": false,
                     "options": [],
                     "positional": false,
-                    "encoding": "pickle",
+                    "encoding": "dill",
                     "id": "a5bed456-eb97-4a16-ae96-b50851fde06b",
                     "parameterType": "ComponentParameter",
                     "usage": "OutputPort"
